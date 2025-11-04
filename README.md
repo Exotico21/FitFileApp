@@ -3,7 +3,6 @@ Hicimos Una Aplicación de sobre la vida sana, la app tiene login , token de con
 # FitLife SPA - Aplicación Móvil (MVP)
 
 
-
  1. Descripción del Proyecto
 
 Esta es la implementación del MVP (Producto Mínimo Viable) para la aplicación móvil de **FitLife SPA**, una plataforma integral de salud en línea. La aplicación se conecta a un backend real para ofrecer a los usuarios una experiencia personalizada de seguimiento de su salud y estado físico.
@@ -18,7 +17,6 @@ El alcance de este proyecto se centra en cubrir los flujos esenciales para un us
 *   **Persistencia de Datos:** La sesión del usuario y sus datos de perfil se mantienen aunque cierre la aplicación.
 *   **Integración Nativa:** Uso de recursos nativos como la galería/cámara y las notificaciones locales.
 
----
 
  2. Stack Tecnológico y Arquitectura
 
@@ -50,7 +48,7 @@ La aplicación sigue un patrón de arquitectura MVVM claro para separar responsa
         *   **Local:** Base de datos Room y Jetpack DataStore.
     *   **Modelos:** Clases de datos (`data class`) que representan las entidades de la aplicación (Usuario, Plan, etc.).
 
----
+
 
 3. Funcionalidades Cubiertas
 
@@ -72,7 +70,7 @@ La aplicación sigue un patrón de arquitectura MVVM claro para separar responsa
     *   UI coherente con un tema de colores y tipografía definido (`Theme.kt`).
     *   Uso de animaciones sutiles (`AnimatedVisibility`) para mostrar mensajes de error y transiciones entre pantallas.
 
----
+
 
 4. Endpoints de la API Utilizados
 
@@ -83,7 +81,7 @@ La aplicación sigue un patrón de arquitectura MVVM claro para separar responsa
 | `PUT`      | `/users/profile`  | (Opcional) Actualiza los datos del perfil de usuario.   |
 | ...        | ...               | *(Añade aquí cualquier otro que uses)*              |
 
----
+
 
 5. Manejo de Errores y Permisos
 
@@ -101,7 +99,7 @@ Los permisos para recursos nativos se solicitan en tiempo de ejecución, siguien
 *   **Galería:** En Android 13 y superior, se solicita el permiso `READ_MEDIA_IMAGES`. En versiones anteriores, se usa `READ_EXTERNAL_STORAGE`. Se proporciona un mensaje explicativo al usuario antes de lanzar la solicitud de permiso.
 *   **Notificaciones:** En Android 13 y superior, se solicita el permiso `POST_NOTIFICATIONS` para poder mostrar notificaciones.
 
----
+
 6. Instalación y Ejecución
 
 1.  Clonar el repositorio: `git clone https://github.com/tu-usuario/tu-repositorio.git`
